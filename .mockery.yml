@@ -1,0 +1,10 @@
+packages:
+  certinfo:
+    config:
+      filename: "{{ .InterfaceName | snakecase }}.go"
+      dir: ./{{ .InterfaceDirRelative }}/mocks
+      structname: '{{ .InterfaceName }}Mock'
+      pkgname: mocks
+      all: true
+      recursive: true
+      template: testify
