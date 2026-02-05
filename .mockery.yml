@@ -1,5 +1,5 @@
 packages:
-  certinfo:
+  github.com/ol-se/ta-certinfo:
     config:
       filename: "{{ .InterfaceName | snakecase }}.go"
       dir: ./{{ .InterfaceDirRelative }}/mocks

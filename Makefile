@@ -1,7 +1,7 @@
 .SILENT:
 
 mock:
-	find -type d -name "mocks" -exec rm -rf "{}" + && mockery
+	find -type d -name "mocks" -exec rm -rf "{}" + && mockery && go mod tidy
 
 cover:
 	go test ./... -coverprofile=.coverage
